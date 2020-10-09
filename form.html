@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<!-- Demonstrates HTML forms -->
+
+<html lang="zh-Hant-TW">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link href="styles.css" rel="stylesheet">
+        <script>
+            function getComment() {
+                var comment = document.getElementById("comment").value;
+                if (comment != null) {
+                    document.getElementById("your_comment").innerHTML = comment;
+                }
+            }
+        </script>
+        <title>
+            留言給我
+        </title>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark navbar-fixed-top">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="index.html">首頁</a></li>
+                <li class="nav-item"><a class="nav-link" href="image.html">我的照片</a></li>
+                <li class="nav-item"><a class="nav-link" href="form.html">留言給我</a></li>
+                <li class="nav-item"><a class="nav-link" href="color.html">換背景顏色</a></li>
+            </ul>
+        </nav>
+        <header class="jumbotron text-center"><h1>留言給我</h1></header>
+        <div class="container">
+            <form>
+                <label for="comment">請留言</label>
+                <input id = "comment" type="text" value="Please leave the comment...">
+                <button type="button" onclick="getComment()">提交</button>
+            </form>
+        </div>
+        <div class="container">
+            <br>
+            <p>你的留言：</p><br>
+            <p id="your_comment"></p>
+        </div>
+    </body>
+</html>

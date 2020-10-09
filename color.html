@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="styles.css" rel="stylesheet">
+    <script>
+        function changeGreenColor() {
+            document.getElementById("background").style.backgroundColor = "#72ED9A";
+        }
+        function changeYellowColor() {
+            document.getElementById("background").style.backgroundColor = "#FEFA96";
+        }
+        function changeRedColor() {
+            document.getElementById("background").style.backgroundColor = "#FEA696";
+        }
+        function changeBlueColor(){
+            document.getElementById("background").style.backgroundColor = "#96DCFE";
+        }
+
+    </script>
+    <title>換背景顏色</title>
+</head>
+<body id="background">
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark navbar-fixed-top">
+        <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="index.html">首頁</a></li>
+            <li class="nav-item"><a class="nav-link" href="image.html">我的照片</a></li>
+            <li class="nav-item"><a class="nav-link" href="form.html">留言給我</a></li>
+            <li class="nav-item"><a class="nav-link" href="color.html">換背景顏色</a></li>
+        </ul>
+    </nav>
+    <header class="jumbotron text-center"><h1>換背景顏色</h1></header>
+    <div class="container">
+        <h3>按下面按鈕改變背景顏色</h3>
+        <button id="button" type="button" class="btn btn-success" onclick="changeGreenColor()">綠綠的</button>
+        <button id="button" type="button" class="btn btn-warning" onclick="changeYellowColor()">黃黃的</button>
+        <button id="button" type="button" class="btn btn-danger" onclick="changeRedColor()">紅紅的</button>
+        <button id="button" type="button" class="btn btn-info" onclick="changeBlueColor()">藍藍的</button>
+    </div>
+</body>
+</html>

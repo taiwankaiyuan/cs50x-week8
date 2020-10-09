@@ -1,0 +1,30 @@
+.footer {
+    color: white;
+    background-color: #292b2c;
+    right: 0;
+    left: 0;
+    padding: 20px;
+}
+
+.navbar-fixed-top{
+    position: fixed;
+    right: 0;
+    left: 0;
+}
+div.gallery{
+    width: 20%;
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+}
+div.gallery:hover{
+    border: 1px solid #292b2c;
+}
+div.gallery img{
+    width: 100%;
+    height: auto;
+}
+.desc{
+    padding: 10px;
+    text-align: center;
+}

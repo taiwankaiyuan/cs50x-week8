@@ -1,0 +1,94 @@
+<!-- 宣告這是html -->
+<!DOCTYPE html>
+<!--
+    1. 必須至少要有4頁不同的html，其中一頁是index.html
+    2. 每頁要互相連結在一起
+    3. 使用至少10個HTML tags，除了<html>、<head>、<body>、<title>以外
+    4. 某一些tag (例如 <p>)要多使用幾次。
+    5. 使用Bootstrap前端框架
+    6. 至少要有一個CSS檔叫styles.css，裡頭至少有5個選擇器，至少5個不同的CSS樣式
+    7. 使用至少1個以上的JavaScript語法
+    8. 必須具有響應式網頁設計（Responsive Web Design）
+-->
+<!-- 從這裡開始寫html，zh-Hant-TW代表網頁使用中華民國/臺灣的繁體中文 -->
+<html lang="zh-Hant-TW">
+<!-- 標頭部分不會顯示在瀏覽器，可以在這裡放CSS、JavaScript等資訊 -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="styles.css" rel="stylesheet">
+    <title>首頁</title>
+</head>
+<!-- 從這裡開始會呈現在瀏覽器畫面上 -->
+<body>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark navbar-fixed-top">
+        <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="index.html">首頁</a></li>
+            <li class="nav-item"><a class="nav-link" href="image.html">我的照片</a></li>
+            <li class="nav-item"><a class="nav-link" href="form.html">留言給我</a></li>
+            <li class="nav-item"><a class="nav-link" href="color.html">換背景顏色</a></li>
+        </ul>
+    </nav>
+    <header class="jumbotron text-center"><h1>專欄介紹</h1></header>
+    <article class="container">
+        <p id="greeting"></p>
+        <br>
+    </article>
+    <article class="container">
+        <p>各位好，我是康凱原，你也可以叫我Kai。</p>
+        <p>我很喜歡科技、科普、科幻等事物。</p>
+        <p>不過，我在大學念了歷史7年，學士班4年、碩士班3年，是一個紮紮實實的文組生，沒有接觸過自然科學或工程訓練。</p>
+        <p>儘管未受過科學訓練，在歷史學領域裡，學者大量地採用人類學、經濟學、政治學、考古學、心理學、植物學等自然與社會
+            科學知識，對於我們來說，跨領域學術交流並不是新鮮事。</p>
+        <p>在這些跨領域的學術裡，包含了電腦科學，是我最喜歡的理工學問。歷史學與電腦科學的結合，最佳的例子就是歷史資料庫，
+            比如中央研究院歷史語言研究所的漢籍全文資料庫。然而，儘管大量的史料都已經數位化，對於史料的解析仍然多半仰賴低
+            效能的人工閱讀。有時我在想，這些年來，歷史學界風靡區域史及全球史的研究，具體來說到底要怎麼進行的？這麼龐大的
+            資料以及不同的語言，光靠人力絕對不可能。</p>
+        <p>如果我們可以藉由電腦幫助我們閱讀/分析/翻譯史料，關於全球史、區域史的研究就能更進一步。這項工作無法全部轉嫁給電
+            腦科學家，歷史學者必須自己動手。甚至，歷史學系最好也把電腦科學的基礎學科，包含了演算法與資料結構、作業系統、計
+            算機結構、電腦網路應用等，放入大學裡當作必修學分。畢竟歷史學與電腦科學（或者新興的資料科學），都是處理資料的學
+            門，可是訓練出來的學生只能夠處理文字資料，實在太吃虧了。</p>
+        <p>雖然我在碩士畢業後，就不再從事歷史研究，依舊對於電腦科學感到興趣。做而言不如起而行，我決定自己研究網站系統開發、
+            資料科學等領域。初步目標是能夠建立網站，把數據資料以視覺化地方式呈現在網頁上；最終目標是能夠系統性地處理史料及
+            其他文字資料。</p>
+        <p>以上就是此電腦技術筆記專欄的緣起，你也是文組背景，卻對於科學、工程等相關知識感到好奇嗎？其實，文組身份不該是學習
+            理工知識的阻礙，跟著我一起研究電腦科學、資料科學等相關知識吧！本專欄預計有網站系統開發、資料視覺化、資料分析、爬
+            蟲等等主題。</p>
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>寫作主題</th>
+                    <th>寫作內容</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>網站系統開發</td>
+                    <td>包含Python、Flask、Django、HTML、CSS、JavaScript、jquery、Bootstrap、SQL等相關學習筆記</td>
+                </tr>
+                <tr>
+                    <td>資料視覺化</td>
+                    <td>包含matplotlib、D3.js等相關學習筆記</td>
+                </tr>
+                <tr>
+                    <td>資料分析</td>
+                    <td>包含Pandas、Numpy、統計學、微積分、線性代數等相關學習筆記</td>
+                </tr>
+            </tbody>
+        </table>               
+    </article>
+    <footer class="footer">
+        <div class="container">本專欄文字皆為個人所創造，轉錄請標記原作者</div>
+    </footer>
+    <script>
+        var name = prompt("您叫什麼名字？", "請輸入您的名字");
+        if (name == null || name == "請輸入您的名字"){
+            document.getElementById("greeting").innerHTML = "嗨！歡迎來到我的網站！";
+        } else {
+            document.getElementById("greeting").innerHTML = "嗨，" + name + "！歡迎來到我的網站！";
+        }
+    </script>
+    </div>
+</body>
+</html>
